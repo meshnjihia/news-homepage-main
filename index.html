@@ -10,26 +10,34 @@
 
     <title>Frontend Mentor | News homepage</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700:800&display=swap" rel="stylesheet">
 
+    <!--My CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--CSS Reset-->
+    <link rel="stylesheet" href="reset.css">
     <script src="https://unpkg.com/feather-icons"></script>
     <body>
 </head>
 
 <body>
 
-    <div class="main-container">
+    <main class="main-container">
 
-        <header>
+        <header class="container__header">
+            <div>
+                <a href="#">
+                    <img src="assets/images/logo.svg" alt="logo">
+                </a>
+            </div>
+            
+            <nav class="container__header-nav">
+                <!--<button class="button" id="menu-close">
+                    <img src="/assets/images/icon-menu-close.svg" alt="menu-close-icon">
+                </button>--> 
 
-            <a href="#">
-                <img src="assets/images/logo.svg" alt="logo">
-            </a>
-            <nav class="nav-container">
-                <input id="menu-toggle" type="checkbox" />
-                <label class='menu-button-container' for="menu-toggle">
-                <span class='menu-button'></span>
-              </label>
                 <ul class="menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">New</a></li>
@@ -37,108 +45,104 @@
                     <li><a href="#">Trending</a></li>
                     <li><a href="#">Categories</a></li>
                 </ul>
-              </nav>
+
+            </nav>
+
+           <!-- <div class="menu-button">
+                <button class="button" id="menu-button">
+                    <img src="/assets/images/icon-menu.svg" alt="menu-icon">
+                </button>
+            </div>
+        -->
         </header>
-
-        <main>
-            <article>
-
-                <div class="grid-container">
-                    <div class="grid-item item1">
-                        <div class="desktop-banner"></div>
-                        <div class="mobile-banner"></div>
-                    </div>
-                    <div class="grid-item item3">
-                        <h1>The Bright Future of Web 3.0?</h1>
-                    </div>
-                    <div class="grid-item item4">
-
-                        <p>
-                            We dive into the next evolution of the web that claims to put the power of the platforms
-                            back into
-                            the hands of the people.
-                            But is it really fulfilling its promise?
-                        </p>
-
-                        <a href="#" class="button">Read more</a>
-
-                        <aside aria-label="1">
-
-                    </div>
-                    <aside class="news-sidebar grid-item item2" id="sidebar" aria-label="1">
-
-                        <h2>News</h2>
-
-                        <div class="item-container">
-
-                            <div class="item-row">
-                                <h3><a href="#">Hydrogen VS Electric Cars</a></h3>
-                                <p> Will hydrogen-fueled cars ever catch up to EVs?</p>
-                            </div>
-                            <div class="item-row">
-                                <h3><a href="#">The Downsides of AI Artistry</a></h3>
-                                <p>What are the possible adverse effects of on-demand AI image generation?</p>
-                            </div>
-                            <div class="item-row">
-                                <h3><a href="#"> Is VC Funding Drying Up?</a></h3>
-                                <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-                            </div>
-                        </div>
-                        </ul>
-                    </aside>
-                    <div class="grid-item item5">
-
-                        <footer>
-                            <ul class="latest-post">
-                                <li class="post-item">
-
-                                    <div class="col-1">
-                                        <img src="assets/images/image-retro-pcs.jpg" alt="retro pc">
-                                    </div>
-                                    <div class="col-2">
-                                        <span class="number">01</span>
-                                        <h3>
-                                            <a href="">Reviving Retro PCs</a></h3>
-                                        <span class="text"> What happens when old PCs are given modern upgrades?</span>
-                                    </div>
-                                    </a>
-                                </li>
-                                <li class="post-item">
-
-                                    <div class="col-1">
-                                        <img src="assets/images/image-top-laptops.jpg" alt="retro pc">
-                                    </div>
-                                    <div class="col-2">
-                                        <span class="number">02</span>
-                                        <h3> <a href="">Top 10 Laptops of 2022</a></h3>
-                                        <span class="text"> Our best picks for various needs and budgets.</span>
-                                    </div>
-                                    </a>
-                                </li>
-                                <li class="post-item">
-
-                                    <div class="col-1">
-                                        <img src="assets/images/image-gaming-growth.jpg" alt="retro pc">
-                                    </div>
-                                    <div class="col-2">
-                                        <span class="number">03</span>
-                                        <h3> <a href="">The Growth of Gaming</a></h3>
-                                        <span class="text"> How the pandemic has sparked fresh opportunities.</span>
-                                    </div>
-                                    </a>
-                                </li>
-                            </ul>
-
-                        </footer>
-
-                    </div>
+        <section class="container__content">
+            <div>
+              <picture>
+                <source
+                    media="(min-width: 768px)"
+                    srcset="./assets/images/image-web-3-desktop.jpg"
+                />
+                    <img src="./assets/images/image-web-3-mobile.jpg" alt="" />
+              </picture>
+      
+            <article class="content_left-col">
+                <h1>The Bright Future of Web 3.0?</h1>
+      
+                <div>
+                  <p class="content_paragraph">
+                    We dive into the next evolution of the web that claims to put the
+                    power of the platforms back into the hands of the people. But is
+                    it really fulfilling its promise?
+                  </p>
+      
+                  <button class="content-button">Read more</button>
                 </div>
 
             </article>
+            </div>
+      
+            <div class="container__content-aside">
+              <h2>New</h2>
+      
+              <article class="content_aside-text">
+                <h3>Hydrogen VS Electric Cars</h3>
+                <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+              </article>
+      
+              <hr class="content_aside-border">
 
-            </section>
+              <article class="content_aside-text">
+                <h3>The Downsides of AI Artistry</h3>
+                <p>
+                  What are the possible adverse effects of on-demand AI image
+                  generation?
+                </p>
+              </article>
+      
+              <hr class="content_aside-border">
 
-        </main>
+              <article class="content_aside-text">
+                <h3>Is VC Funding Drying Up?</h3>
+                <p>
+                  Private funding by VC firms is down 50% YOY. We take a look at what
+                  that means.
+                </p>
+              </article>
+
+            </div>
+          </section>
+
+          <div class="container__cards">
+
+            <article class="card_content">
+              <img src="./assets/images/image-retro-pcs.jpg" alt="" />
+              <div>
+                <span>01</span>
+                <h4>Reviving Retro PCs</h4>
+                <p>What happens when old PCs are given modern upgrades?</p>
+              </div>
+            </article>
+      
+            <article class="card_content">
+              <img src="./assets/images/image-top-laptops.jpg" alt="" />
+              <div>
+                <span>02</span>
+                <h4>Top 10 Laptops of 2022</h4>
+                <p>Our best picks for various needs and budgets.</p>
+              </div>
+            </article>
+      
+            <article class="card_content">
+              <img src="./assets/images/image-gaming-growth.jpg" alt="" />
+              <div>
+                <span>03</span>
+                <h4>The Growth of Gaming</h4>
+                <p>How the pandemic has sparked fresh opportunities.</p>
+              </div>
+            </article>
+          </div>
+      
+
 
         <footer>
             <div class="attribution">
@@ -149,7 +153,7 @@
             </div>
         </footer>
 
-    </div>
+    </main>
 
    <script>
       feather.replace()
