@@ -1,163 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- displays site properly based on user's device -->
-
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
     <title>Frontend Mentor | News homepage</title>
-
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700:800&display=swap" rel="stylesheet">
-
-    <!--My CSS-->
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <!--CSS Reset-->
-    <link rel="stylesheet" href="reset.css">
-    <script src="https://unpkg.com/feather-icons"></script>
-    <body>
-</head>
-
-<body>
-
-    <main class="main-container">
-
-        <header class="container__header">
-            <div>
-                <a href="#">
-                    <img src="assets/images/logo.svg" alt="logo">
-                </a>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <img src="./assets/images/logo.svg" alt="logo" class="logo" />
+        <ul class="nav-links">
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
+        </ul>
+        <img src="./assets/images/icon-menu.svg" class="menu" alt="">
+      </nav>
+    
+    <main>
+      <div class="main-container">
+        <div class="main-blog">
+          <picture>
+            <source
+              media="(max-width:800px)"
+              srcset="./assets/images/image-web-3-mobile.jpg"
+            />
+            <img src="./assets/images/image-web-3-desktop.jpg" alt="web3" />
+          </picture>
+          <div class="blog-info">
+            <h1 class="blog-title">The Bright Future of Web 3.0?</h1>
+            <div class="blog-read">
+              <p class="blog-content">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button>Read more</button>
             </div>
-            
-            <nav class="container__header-nav">
-                <!--<button class="button" id="menu-close">
-                    <img src="/assets/images/icon-menu-close.svg" alt="menu-close-icon">
-                </button>--> 
-
-                <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">New</a></li>
-                    <li><a href="#">Popular</a></li>
-                    <li><a href="#">Trending</a></li>
-                    <li><a href="#">Categories</a></li>
-                </ul>
-
-            </nav>
-
-           <!-- <div class="menu-button">
-                <button class="button" id="menu-button">
-                    <img src="/assets/images/icon-menu.svg" alt="menu-icon">
-                </button>
-            </div>
-        -->
-        </header>
-        <section class="container__content">
-            <div>
-              <picture>
-                <source
-                    media="(min-width: 768px)"
-                    srcset="./assets/images/image-web-3-desktop.jpg"
-                />
-                    <img src="./assets/images/image-web-3-mobile.jpg" alt="" />
-              </picture>
-      
-            <article class="content_left-col">
-                <h1>The Bright Future of Web 3.0?</h1>
-      
-                <div>
-                  <p class="content_paragraph">
-                    We dive into the next evolution of the web that claims to put the
-                    power of the platforms back into the hands of the people. But is
-                    it really fulfilling its promise?
-                  </p>
-      
-                  <button class="content-button">Read more</button>
-                </div>
-
-            </article>
-            </div>
-      
-            <div class="container__content-aside">
-              <h2>New</h2>
-      
-              <article class="content_aside-text">
-                <h3>Hydrogen VS Electric Cars</h3>
-                <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-              </article>
-      
-              <hr class="content_aside-border">
-
-              <article class="content_aside-text">
-                <h3>The Downsides of AI Artistry</h3>
-                <p>
+          </div>
+        </div>
+        <div class="new">
+          <div class="new-container">
+            <h2 class="header">New</h2>
+            <div class="new-blogs">
+              <div class="new-blog">
+                <h3 class="new-title">New Hydrogen VS Electric Cars</h3>
+                <p class="new-content">
+                  Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+              </div>
+              <div class="new-blog">
+                <h3 class="new-title">The Downsides of AI Artistry</h3>
+                <p class="new-content">
                   What are the possible adverse effects of on-demand AI image
                   generation?
                 </p>
-              </article>
-      
-              <hr class="content_aside-border">
-
-              <article class="content_aside-text">
-                <h3>Is VC Funding Drying Up?</h3>
-                <p>
-                  Private funding by VC firms is down 50% YOY. We take a look at what
-                  that means.
+              </div>
+              <div class="new-blog">
+                <h3 class="new-title">Is VC Funding Drying Up?</h3>
+                <p class="new-content">
+                  Private funding by VC firms is down 50% YOY.We take a look at
+                  what that means.
                 </p>
-              </article>
-
+              </div>
             </div>
-          </section>
-
-          <div class="container__cards">
-
-            <article class="card_content">
-              <img src="./assets/images/image-retro-pcs.jpg" alt="" />
-              <div>
-                <span>01</span>
-                <h4>Reviving Retro PCs</h4>
-                <p>What happens when old PCs are given modern upgrades?</p>
-              </div>
-            </article>
-      
-            <article class="card_content">
-              <img src="./assets/images/image-top-laptops.jpg" alt="" />
-              <div>
-                <span>02</span>
-                <h4>Top 10 Laptops of 2022</h4>
-                <p>Our best picks for various needs and budgets.</p>
-              </div>
-            </article>
-      
-            <article class="card_content">
-              <img src="./assets/images/image-gaming-growth.jpg" alt="" />
-              <div>
-                <span>03</span>
-                <h4>The Growth of Gaming</h4>
-                <p>How the pandemic has sparked fresh opportunities.</p>
-              </div>
-            </article>
           </div>
-      
-
-
-        <footer>
-            <div class="attribution">
-                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">
-                    Frontend
-                    Mentor</a>.
-                Coded by <a href="https://meshacknjihia.com">Meshack Njihia</a>.
+        </div>
+        <div class="top-blogs">
+          <div class="top-blog">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="">
+            <div class="top-info">
+              <h2 class="num">01</h2>
+              <h3 class="top-title">Reviving Retro PCs</h3>
+              <p class="top-content">What happens when old PCs are given modern upgrades?</p>
             </div>
-        </footer>
-
+          </div>
+          <div class="top-blog">
+            <img src="./assets/images/image-top-laptops.jpg" alt="">
+            <div class="top-info">
+              <h2 class="num">02</h2>
+              <h3 class="top-title">Top 10 Laptops of 2022</h3>
+              <p class="top-content">Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+          <div class="top-blog">
+            <img src="./assets/images/image-gaming-growth.jpg" alt="">
+            <div class="top-info">
+              <h2 class="num">03</h2>
+              <h3 class="top-title">The Growth of Gaming</h3>
+              <p class="top-content">How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-
-   <script>
-      feather.replace()
-    </script>
-</body>
-
+    </div>
+  </body>
 </html>
